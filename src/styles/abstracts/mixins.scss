@@ -1,0 +1,36 @@
+@use "../abstracts/variables.scss" as *;
+
+@mixin btn($color) {
+  background-color: $color;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+  transition: all ease-in 0.1s;
+  color: $white;
+  &:hover {
+    background-color: lighten($color, 17%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.15rem $color;
+  }
+}
+
+@mixin btn-size($padding) {
+  padding: $padding;
+}
+
+@mixin shadow {
+  -webkit-box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.253);
+  box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.253);
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

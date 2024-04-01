@@ -1,0 +1,37 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+
+.dropdown {
+  @include shadow;
+  background-color: $white;
+  border-radius: 2px;
+  border: 1px solid rgb(236, 233, 235);
+  display: none;
+  min-width: 10rem;
+  padding: 12px 16px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  &-item {
+    border-bottom: 1px solid rgb(236, 233, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+    * {
+      padding: 0.25rem;
+      font-size: 0.9rem;
+    }
+    img {
+      width: 6rem;
+      border-radius: 2px;
+    }
+  }
+  p {
+    padding: 0.25rem;
+  }
+}
+
+.circle:hover {
+  color: $accent;
+}

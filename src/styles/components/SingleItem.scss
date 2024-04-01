@@ -1,0 +1,68 @@
+@use "../abstracts/variables.scss" as *;
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.all-items {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white;
+  border: 1px solid rgb(236, 233, 235);
+  border-radius: 3px;
+  margin: 0.5rem;
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 20px;
+    padding: 0.5rem 0;
+  }
+  .price {
+    font-weight: 600;
+  }
+  p {
+    padding: 0.5rem 1rem;
+  }
+  img {
+    width: 100%;
+  }
+  button {
+    align-self: flex-end;
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+@media (min-width: 41em) {
+  .title {
+    margin-top: 3rem;
+  }
+  .all-items {
+    margin-top: 2rem;
+    flex-direction: row;
+    .item {
+      max-width: 20rem;
+      margin: 0.75rem;
+      min-height: 35rem;
+      &-info {
+        min-height: 12rem;
+      }
+    }
+  }
+}
