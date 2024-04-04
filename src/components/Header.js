@@ -21,7 +21,7 @@ const Header = ({ activeLink, setActiveLink }) => {
           &#9776;
         </button>
         <Link className="nav-title" to="/" onClick={() => setActiveLink("")}>
-          <p>Sparkles</p>
+          <p>Jewel Ease</p>
         </Link>
         <ShoppingBag hamNav={true} setActiveLink={setActiveLink} />
       </div>
@@ -31,7 +31,7 @@ const Header = ({ activeLink, setActiveLink }) => {
           to="/"
           onClick={() => setActiveLink("")}
         >
-          <p>Sparkles</p>
+          <p>Jewel Ease</p>
         </Link>
         <ul className="nav-list">
           <li onClick={() => setActiveLink("all")}>

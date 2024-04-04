@@ -34,20 +34,8 @@ const Footer = () => {
           allowfullscreen
         ></iframe>
       )}
-        <h6 className="brand-name">Sparkles</h6>
-        <div className="attribution">
-          <p>Images:</p>
-          <p>
-            <a
-              className="link"
-              rel="noreferrer"
-              href="https://pixabay"
-              target="_blank"
-            >
-              Pixabay
-            </a>
-          </p>
-        </div>
+        <h6 className="brand-name">Jewel Ease</h6>
+        
         <div className="creator">
           <p></p>
           <div className="creator-links">
